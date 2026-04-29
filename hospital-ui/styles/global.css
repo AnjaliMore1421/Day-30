@@ -1,0 +1,319 @@
+/* ================= RESET ================= */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+
+  /*  Premium light gradient background */
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+/* ================= LAYOUT ================= */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  padding: 25px;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+  width: 230px;
+  min-height: 100vh;
+  background: #0f172a;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  color: #e5e7eb;
+}
+
+.sidebar li {
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar li.active {
+  background: #38bdf8;
+  color: black;
+}
+
+.sidebar li:hover {
+  background: #1e293b;
+}
+
+/* ================= CARD ================= */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+
+  /*  smooth shadow */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ================= TOP CARDS ================= */
+.top-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #0f172a;
+}
+
+.stat p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* ================= MIDDLE SECTION ================= */
+.middle {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* ================= CHART ================= */
+.chart {
+  height: 260px;
+}
+
+.chart h3 {
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+/* ================= DOCTOR CARD ================= */
+.doctor-card {
+  text-align: center;
+
+  /*  EXACT blue gradient like reference */
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  color: white;
+}
+
+.doctor-card img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+
+  /*  white border like UI */
+  border: 4px solid white;
+}
+
+.doctor-card h3 {
+  margin: 5px 0;
+}
+
+.doctor-card p {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* Doctor stats */
+.doc-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.doc-stats strong {
+  display: block;
+  font-size: 15px;
+}
+
+.doc-stats p {
+  margin: 0;
+  font-size: 12px;
+}
+
+/* ================= BOTTOM SECTION ================= */
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* ================= LIST ================= */
+.list h3 {
+  margin-bottom: 10px;
+}
+
+.list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  color: #334155;
+}
+
+/* ================= TABLE ================= */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* HEADER */
+.custom-table th {
+  background: #0f172a;
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  padding: 14px 16px;
+  text-align: left;
+}
+
+/* CELLS */
+.custom-table td {
+  padding: 14px 16px;
+  text-align: left;
+}
+
+/* ROW */
+.custom-table tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* HOVER */
+.custom-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+/* ACTION BUTTONS */
+.actions-cell {
+  display: flex;
+  gap: 10px;
+}
+
+/* COLUMN WIDTH FIX */
+.custom-table th:nth-child(1),
+.custom-table td:nth-child(1) {
+  width: 40%;
+}
+
+.custom-table th:nth-child(2),
+.custom-table td:nth-child(2) {
+  width: 20%;
+}
+
+.custom-table th:nth-child(3),
+.custom-table td:nth-child(3) {
+  width: 40%;
+}
+
+/* ================= BUTTON ================= */
+button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Primary */
+button.primary {
+  background: #2563eb;
+  color: white;
+}
+
+/* Danger */
+button.danger {
+  background: #ef4444;
+  color: white;
+}
+
+/* ================= MODAL ================= */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 320px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* ================= LOGIN ================= */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  /*  dark premium background */
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+/* ================= HEADINGS ================= */
+h2 {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.settings-card {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Toggle row */
+.toggle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Better inputs */
+input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
