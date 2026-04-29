@@ -1,0 +1,14 @@
+:root {
+  --primary: #0f172a;
+  --secondary: #38bdf8;
+
+  /*  New modern background */
+  --bg: linear-gradient(135deg, #eef2ff, #f8fafc);
+
+  --card-bg: #ffffff;
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+
+  --radius: 12px;
+  --spacing: 16px;
+}
